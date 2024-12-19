@@ -4,6 +4,7 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="initial-scale=1.0"> 
         <title>Clock</title> 
+        <link rel="stylesheet" href="style4.css"> 
     </head> <body> <header> 
         <p id="one">Name: <input type="text" name="name"></p> 
         <button id="container">Search</button> 
@@ -13,54 +14,8 @@
          <p>The date is: <span id="date"></span></p>
           <p>The time is: <span id="time"></span></p>
          </div> 
-         <script>
-           function updateDateTime()
-           { let now = new Date();
-             let date = now.toLocaleDateString(); 
-             let time = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds(); 
-             document.getElementById('date').innerHTML = date; 
-             document.getElementById('time').innerHTML = time; } 
-           
-           updateDateTime();
-           setInterval(updateDateTime, 1000); 
-           </script> 
-           <style>
-            #container{
-    position: fixed;
-    top:16px;
-    left: 250px;
-    width:60px;
-    height:30px;
-    background-color: aquamarine;
-    color:blueviolet;
-}
-#one{
-    width: 230px;
-    background-color: aqua;
-    height: 30px;
-    text-align: center;
-    color:red;
-}
-#two{
-    font-size: xx-large;
-    color:darkgoldenrod;
-    width:200px;
-    top:16px;
-    position:fixed;
-    left:400px;
-}
-#three{
-    width:600px;
-    height:600px;
-    position: fixed;
-    top:100px;
-    left:300px;
-    background-color:aliceblue;
-
-}
-body{
-    background-color: lightpink;
-}
-           </style>
+         <script
+           src="javascript2.js"></script>
+          
            </body> 
            </html>
